@@ -1,0 +1,14 @@
+pyenv local nogil-3.9.10
+pip install -r requirements.txt
+echo "\nRUNNING nogil\n" >> output.txt
+source single-experiment
+
+pyenv local 3.9.10
+pip install -r requirements.txt
+echo "\nRUNNING 3.9.10\n" >> output.txt
+source single-experiment
+
+pyenv local 3.11.1
+pip install -r requirements.txt
+echo "\nRUNNING 3.11.1\n" >> output.txt
+source single-experiment

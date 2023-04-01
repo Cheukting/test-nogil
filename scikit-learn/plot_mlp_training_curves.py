@@ -23,6 +23,9 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn import datasets
 from sklearn.exceptions import ConvergenceWarning
 
+print("==================")
+print("Experiment: plot_mlp_training_curves.py\n")
+
 # different learning rate schedules and momentum parameters
 params = [
     {
@@ -131,3 +134,5 @@ for _ in range(10):
         plot_on_dataset(*data, name=name)
     time_list.append(time.time()-t0)
 print(f"Training takes {sum(time_list)/len(time_list)}s on average")
+
+print("==================\n")

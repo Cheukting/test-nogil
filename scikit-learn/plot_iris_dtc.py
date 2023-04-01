@@ -20,6 +20,8 @@ from sklearn.datasets import load_iris
 
 import time
 
+print("==================")
+print("Experiment: plot_iris_dtc.py\n")
 iris = load_iris()
 
 import numpy as np
@@ -48,3 +50,4 @@ for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]])
     train_time.append(time.time()-t0)
 
 print(f"On average: {sum(train_time)/len(train_time)*1000}ms")
+print("==================\n")

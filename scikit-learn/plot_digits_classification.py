@@ -16,6 +16,8 @@ from sklearn.model_selection import train_test_split
 
 import time
 
+print("==================")
+print("Experiment: plot_digits_classification.py\n")
 
 digits = datasets.load_digits()
 
@@ -36,11 +38,4 @@ for _ in range(50):
     clf.fit(X_train, y_train)
     time_list.append(time.time()-t0)
 print(f"Fitting takes {sum(time_list)/len(time_list)}s on average")
-
-# Predict the value of the digit on the test subset
-predicted = clf.predict(X_test)
-
-print(
-    f"Classification report for classifier {clf}:\n"
-    f"{metrics.classification_report(y_test, predicted)}\n"
-)
+print("==================\n")

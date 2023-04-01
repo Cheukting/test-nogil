@@ -25,13 +25,14 @@ silhouette   silhouette coefficient
 
 """
 
+print("==================")
+print("Experiment: plot_kmeans_digits.py\n")
+
 import numpy as np
 from sklearn.datasets import load_digits
 
 data, labels = load_digits(return_X_y=True)
 (n_samples, n_features), n_digits = data.shape, np.unique(labels).size
-
-print(f"# digits: {n_digits}; # samples: {n_samples}; # features {n_features}")
 
 from time import time
 from sklearn import metrics
@@ -94,7 +95,6 @@ def bench_k_means(kmeans, name, data, labels):
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 
-print(82 * "_")
 print("init\t\ttime\tinertia\thomo\tcompl\tv-meas\tARI\tAMI\tsilhouette")
 
 kmeans = KMeans(init="k-means++", n_clusters=n_digits, n_init=4, random_state=0)
@@ -107,4 +107,5 @@ pca = PCA(n_components=n_digits).fit(data)
 kmeans = KMeans(init=pca.components_, n_clusters=n_digits, n_init=1)
 bench_k_means(kmeans=kmeans, name="PCA-based", data=data, labels=labels)
 
-print(82 * "_")
+
+print("==================\n")
