@@ -1,7 +1,7 @@
 import os
 import imageio
 
-xray_image = imageio.v3.imread("00000011_001.png")
+xray_image = imageio.v3.imread("numpy/00000011_000.png")
 
 import numpy as np
 
