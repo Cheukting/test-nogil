@@ -1,0 +1,102 @@
+--------- RUNNING nogil ---------
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.02895740032196045s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0006814002990722656s
+Trining takes 0.0003771781921386719s
+Trining takes 0.0003314018249511719s
+Trining takes 0.00032138824462890625s
+Trining takes 0.00030112266540527344s
+Trining takes 0.0002830028533935547s
+On average: 0.3892978032430013ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.165s	69662	0.680	0.719	0.699	0.570	0.695	0.174
+random   	0.027s	69707	0.675	0.716	0.694	0.560	0.691	0.163
+PCA-based	0.013s	72686	0.636	0.658	0.647	0.521	0.643	0.164
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.4628861427307127s on average
+==================
+
+--------- RUNNING 3.9.10 ---------
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.02833017349243164s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0010404586791992188s
+Trining takes 0.0006248950958251953s
+Trining takes 0.0005478858947753906s
+Trining takes 0.0005323886871337891s
+Trining takes 0.0005369186401367188s
+Trining takes 0.0005509853363037109s
+On average: 0.6463925043741862ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.141s	69662	0.680	0.719	0.699	0.570	0.695	0.171
+random   	0.024s	69707	0.675	0.716	0.694	0.560	0.691	0.168
+PCA-based	0.010s	74152	0.653	0.683	0.668	0.539	0.664	0.147
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.3863027334213256s on average
+==================
+
+--------- RUNNING 3.11.1 ---------
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.02827878475189209s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0009665489196777344s
+Trining takes 0.0006084442138671875s
+Trining takes 0.0005433559417724609s
+Trining takes 0.0005261898040771484s
+Trining takes 0.00048351287841796875s
+Trining takes 0.0004870891571044922s
+On average: 0.6095965703328451ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.121s	69662	0.680	0.719	0.699	0.570	0.695	0.162
+random   	0.024s	69707	0.675	0.716	0.694	0.560	0.691	0.183
+PCA-based	0.012s	72686	0.636	0.658	0.647	0.521	0.643	0.141
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.3536574602127076s on average
+==================
+
