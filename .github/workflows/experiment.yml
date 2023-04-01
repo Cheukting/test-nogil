@@ -9,9 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          source set-up-env
-          source run-experiment
+      - name: Install Pyenv
+        run: source set-up-env
+      - name: Run Experiments
+        run: source run-experiment
+      - name: Upload results
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git checkout -b ${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}
           git add .
           git commit -m "experiment result"
