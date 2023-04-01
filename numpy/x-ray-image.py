@@ -9,6 +9,9 @@ from scipy import ndimage
 
 import time
 
+print("==================")
+print("Experiment: x-ray-image.py\n")
+
 time_list = []
 for _ in range(50):
     t0 = time.time()
@@ -45,3 +48,4 @@ for _ in range(50):
     xray_image_canny *= 255.0 / np.max(xray_image_canny)
     time_list.append(time.time()-t0)
 print(f"Canny filter takes {sum(time_list)/len(time_list)}s on average")
+print("==================\n")

@@ -6,6 +6,9 @@ from numpy import linalg
 
 import time
 
+print("==================")
+print("Experiment: nd-array.py\n")
+
 img_array = img / 255
 img_gray = img_array @ [0.2126, 0.7152, 0.0722]
 
@@ -34,3 +37,4 @@ for _ in range(50):
     img_array_transposed = np.transpose(img_array, (2, 0, 1))
     time_list.append(time.time()-t0)
 print(f"Transpose takes {sum(time_list)/len(time_list)}s on average")
+print("==================\n")
