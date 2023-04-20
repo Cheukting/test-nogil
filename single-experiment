@@ -1,3 +1,6 @@
+python3 pure_python/fibonacci.py >> output.txt
+python3 run_profile.py pure_python/fibonacci.py >> profile_out.txt
+
 python3 numpy/nd-array.py >> output.txt
 python3 run_profile.py numpy/nd-array.py >> profile_out.txt
 python3 numpy/x-ray-image.py >> output.txt
