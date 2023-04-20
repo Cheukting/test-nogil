@@ -23,9 +23,6 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn import datasets
 from sklearn.exceptions import ConvergenceWarning
 
-print("==================")
-print("Experiment: plot_mlp_training_curves.py\n")
-
 # different learning rate schedules and momentum parameters
 params = [
     {
@@ -125,14 +122,25 @@ data_sets = [
     datasets.make_moons(noise=0.3, random_state=0),
 ]
 
-time_list = []
-for _ in range(10):
-    t0 = time.time()
+def run_all():
     for data, name in zip(
         data_sets, ["iris", "digits", "circles", "moons"]
     ):
         plot_on_dataset(*data, name=name)
-    time_list.append(time.time()-t0)
-print(f"Training takes {sum(time_list)/len(time_list)}s on average")
 
-print("==================\n")
+if __name__ == '__main__':
+
+    print("==================")
+    print("Experiment: plot_mlp_training_curves.py\n")
+
+    time_list = []
+    for _ in range(10):
+        t0 = time.time()
+        for data, name in zip(
+            data_sets, ["iris", "digits", "circles", "moons"]
+        ):
+            plot_on_dataset(*data, name=name)
+        time_list.append(time.time()-t0)
+    print(f"Training takes {sum(time_list)/len(time_list)}s on average")
+
+    print("==================\n")

@@ -1,7 +1,13 @@
 python3 numpy/nd-array.py >> output.txt
+python3 run_profile.py numpy/nd-array.py >> profile_out.txt
 python3 numpy/x-ray-image.py >> output.txt
+python3 run_profile.py numpy/x-ray-image.py >> profile_out.txt
 
 python3 scikit-learn/plot_digits_classification.py >> output.txt
+python3 run_profile.py scikit-learn/plot_digits_classification.py >> profile_out.txt
 python3 scikit-learn/plot_iris_dtc.py >> output.txt
+python3 run_profile.py scikit-learn/plot_iris_dtc.py >> profile_out.txt
 python3 scikit-learn/plot_kmeans_digits.py >> output.txt
+python3 run_profile.py scikit-learn/plot_kmeans_digits.py >> profile_out.txt
 python3 scikit-learn/plot_mlp_training_curves.py >> output.txt
+python3 run_profile.py scikit-learn/plot_mlp_training_curves.py >> profile_out.txt

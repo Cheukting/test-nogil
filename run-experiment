@@ -5,14 +5,17 @@ eval "$(pyenv init -)"
 pyenv local nogil-3.9.10
 pip install -r requirements.txt
 echo "--------- RUNNING nogil ---------" >> output.txt
+echo "--------- RUNNING nogil ---------" >> profile_out.txt
 source single-experiment
 
 pyenv local 3.9.10
 pip install -r requirements.txt
 echo "--------- RUNNING 3.9.10 ---------" >> output.txt
+echo "--------- RUNNING 3.9.10 ---------" >> profile_out.txt
 source single-experiment
 
 pyenv local 3.11.1
 pip install -r requirements.txt
 echo "--------- RUNNING 3.11.1 ---------" >> output.txt
+echo "--------- RUNNING 3.11.1 ---------" >> profile_out.txt
 source single-experiment

@@ -20,34 +20,51 @@ from sklearn.datasets import load_iris
 
 import time
 
-print("==================")
-print("Experiment: plot_iris_dtc.py\n")
-iris = load_iris()
-
 import numpy as np
 
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.inspection import DecisionBoundaryDisplay
 
+iris = load_iris()
 
-# Parameters
-n_classes = 3
-plot_colors = "ryb"
-plot_step = 0.02
+def run_all():
 
-train_time = []
+    # Parameters
+    n_classes = 3
+    plot_colors = "ryb"
+    plot_step = 0.02
 
-for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]):
-    # We only take the two corresponding features
-    X = iris.data[:, pair]
-    y = iris.target
+    for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]):
+        # We only take the two corresponding features
+        X = iris.data[:, pair]
+        y = iris.target
 
-    # Train
-    t0 = time.time()
-    clf = DecisionTreeClassifier().fit(X, y)
-    print(f"Trining takes {time.time()-t0}s")
-    train_time.append(time.time()-t0)
+        # Train
+        clf = DecisionTreeClassifier().fit(X, y)
 
-print(f"On average: {sum(train_time)/len(train_time)*1000}ms")
-print("==================\n")
+if __name__ == '__main__':
+
+    print("==================")
+    print("Experiment: plot_iris_dtc.py\n")
+
+    # Parameters
+    n_classes = 3
+    plot_colors = "ryb"
+    plot_step = 0.02
+
+    train_time = []
+
+    for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]):
+        # We only take the two corresponding features
+        X = iris.data[:, pair]
+        y = iris.target
+
+        # Train
+        t0 = time.time()
+        clf = DecisionTreeClassifier().fit(X, y)
+        print(f"Trining takes {time.time()-t0}s")
+        train_time.append(time.time()-t0)
+
+    print(f"On average: {sum(train_time)/len(train_time)*1000}ms")
+    print("==================\n")
