@@ -1,0 +1,153 @@
+--------- RUNNING nogil ---------
+==================
+Experiment: nd-array.py
+
+SVD takes 0.26837146759033204s on average
+Norm takes 0.02404693603515625s on average
+Transpose takes 1.506805419921875e-06s on average
+==================
+
+==================
+Experiment: x-ray-image.py
+
+Laplacian-Gaussian takes 0.03191062450408935s on average
+Gaussian gradient magnitude takes 0.06616219997406006s on average
+Sobel filter takes 0.07617813110351562s on average
+Canny filter takes 0.0633366584777832s on average
+==================
+
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.028628840446472167s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0007023811340332031s
+Trining takes 0.0003864765167236328s
+Trining takes 0.00034046173095703125s
+Trining takes 0.0003237724304199219s
+Trining takes 0.00031685829162597656s
+Trining takes 0.00029730796813964844s
+On average: 0.4013379414876302ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.143s	69662	0.680	0.719	0.699	0.570	0.695	0.180
+random   	0.028s	69707	0.675	0.716	0.694	0.560	0.691	0.182
+PCA-based	0.014s	72713	0.637	0.659	0.648	0.521	0.644	0.155
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.467376708984375s on average
+==================
+
+--------- RUNNING 3.9.10 ---------
+==================
+Experiment: nd-array.py
+
+SVD takes 0.25840188026428224s on average
+Norm takes 0.02381601810455322s on average
+Transpose takes 1.8453598022460938e-06s on average
+==================
+
+==================
+Experiment: x-ray-image.py
+
+Laplacian-Gaussian takes 0.0327547025680542s on average
+Gaussian gradient magnitude takes 0.06922953605651855s on average
+Sobel filter takes 0.0772577714920044s on average
+Canny filter takes 0.06478106021881104s on average
+==================
+
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.02864405632019043s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.000985860824584961s
+Trining takes 0.0006034374237060547s
+Trining takes 0.0005397796630859375s
+Trining takes 0.0005218982696533203s
+Trining takes 0.0005359649658203125s
+Trining takes 0.0005042552947998047s
+On average: 0.6218353907267252ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.128s	69662	0.680	0.719	0.699	0.570	0.695	0.168
+random   	0.024s	69707	0.675	0.716	0.694	0.560	0.691	0.163
+PCA-based	0.013s	72686	0.636	0.658	0.647	0.521	0.643	0.162
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.4242700338363647s on average
+==================
+
+--------- RUNNING 3.11.1 ---------
+==================
+Experiment: nd-array.py
+
+SVD takes 0.2584543180465698s on average
+Norm takes 0.02427513599395752s on average
+Transpose takes 1.8167495727539063e-06s on average
+==================
+
+==================
+Experiment: x-ray-image.py
+
+Laplacian-Gaussian takes 0.03268623352050781s on average
+Gaussian gradient magnitude takes 0.07060145378112793s on average
+Sobel filter takes 0.07863492965698242s on average
+Canny filter takes 0.0648577356338501s on average
+==================
+
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.026217284202575682s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0009839534759521484s
+Trining takes 0.0005960464477539062s
+Trining takes 0.0005383491516113281s
+Trining takes 0.0005970001220703125s
+Trining takes 0.0004949569702148438s
+Trining takes 0.00047469139099121094s
+On average: 0.6213982899983724ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.120s	69662	0.680	0.719	0.699	0.570	0.695	0.175
+random   	0.024s	69707	0.675	0.716	0.694	0.560	0.691	0.171
+PCA-based	0.012s	72686	0.636	0.658	0.647	0.521	0.643	0.149
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.320921611785889s on average
+==================
+
