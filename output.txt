@@ -1,0 +1,171 @@
+--------- RUNNING nogil ---------
+==================
+Experiment: fibonacci.py
+
+Fibonacci of 25 takes 0.02426144599914551s on average
+==================
+
+==================
+Experiment: nd-array.py
+
+SVD takes 0.2634922647476196s on average
+Norm takes 0.02359297275543213s on average
+Transpose takes 1.7595291137695312e-06s on average
+==================
+
+==================
+Experiment: x-ray-image.py
+
+Laplacian-Gaussian takes 0.03353238582611084s on average
+Gaussian gradient magnitude takes 0.07119312286376953s on average
+Sobel filter takes 0.08350066661834717s on average
+Canny filter takes 0.07011430740356445s on average
+==================
+
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.03273204803466797s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.000698089599609375s
+Trining takes 0.0003726482391357422s
+Trining takes 0.00033164024353027344s
+Trining takes 0.00032901763916015625s
+Trining takes 0.0003113746643066406s
+Trining takes 0.00030303001403808594s
+On average: 0.39788087209065753ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.230s	69662	0.680	0.719	0.699	0.570	0.695	0.179
+random   	0.032s	69707	0.675	0.716	0.694	0.560	0.691	0.172
+PCA-based	0.015s	72686	0.636	0.658	0.647	0.521	0.643	0.153
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 3.250050401687622s on average
+==================
+
+--------- RUNNING 3.9.10 ---------
+==================
+Experiment: fibonacci.py
+
+Fibonacci of 25 takes 0.04521145820617676s on average
+==================
+
+==================
+Experiment: nd-array.py
+
+SVD takes 0.24273072242736815s on average
+Norm takes 0.019841580390930175s on average
+Transpose takes 1.850128173828125e-06s on average
+==================
+
+==================
+Experiment: x-ray-image.py
+
+Laplacian-Gaussian takes 0.029890217781066895s on average
+Gaussian gradient magnitude takes 0.06384754657745362s on average
+Sobel filter takes 0.07394010543823243s on average
+Canny filter takes 0.06696015357971191s on average
+==================
+
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.03196014404296875s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0010204315185546875s
+Trining takes 0.0006246566772460938s
+Trining takes 0.0005645751953125s
+Trining takes 0.000553131103515625s
+Trining takes 0.0005369186401367188s
+Trining takes 0.0005266666412353516s
+On average: 0.6451606750488281ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.176s	69662	0.680	0.719	0.699	0.570	0.695	0.177
+random   	0.024s	69707	0.675	0.716	0.694	0.560	0.691	0.188
+PCA-based	0.012s	72686	0.636	0.658	0.647	0.521	0.643	0.135
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.7240782260894774s on average
+==================
+
+--------- RUNNING 3.11.1 ---------
+==================
+Experiment: fibonacci.py
+
+Fibonacci of 25 takes 0.02759331703186035s on average
+==================
+
+==================
+Experiment: nd-array.py
+
+SVD takes 0.2658672857284546s on average
+Norm takes 0.02374441146850586s on average
+Transpose takes 1.9741058349609373e-06s on average
+==================
+
+==================
+Experiment: x-ray-image.py
+
+Laplacian-Gaussian takes 0.03097113609313965s on average
+Gaussian gradient magnitude takes 0.06556344985961914s on average
+Sobel filter takes 0.07584171295166016s on average
+Canny filter takes 0.06335073947906494s on average
+==================
+
+==================
+Experiment: plot_digits_classification.py
+
+Fitting takes 0.029578137397766113s on average
+==================
+
+==================
+Experiment: plot_iris_dtc.py
+
+Trining takes 0.0010685920715332031s
+Trining takes 0.0006837844848632812s
+Trining takes 0.0005829334259033203s
+Trining takes 0.00058746337890625s
+Trining takes 0.0005490779876708984s
+Trining takes 0.0005238056182861328s
+On average: 0.674128532409668ms
+==================
+
+==================
+Experiment: plot_kmeans_digits.py
+
+init		time	inertia	homo	compl	v-meas	ARI	AMI	silhouette
+k-means++	0.188s	69662	0.680	0.719	0.699	0.570	0.695	0.176
+random   	0.025s	69707	0.675	0.716	0.694	0.560	0.691	0.169
+PCA-based	0.012s	72686	0.636	0.658	0.647	0.521	0.643	0.146
+==================
+
+==================
+Experiment: plot_mlp_training_curves.py
+
+Training takes 2.613424205780029s on average
+==================
+
